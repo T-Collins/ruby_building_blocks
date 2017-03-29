@@ -7,10 +7,7 @@
 
 #start off with a best_profit that is the minimum integer, so the first run through of stock_picker will override this
 
-def stock_picker(prices, best_profit = -(2**(0.size * 8 -2)) )
-	min_buy_index = 0
-	max_sell_index = 0
-	
+def stock_picker(prices, best_profit = -(2**(0.size * 8 -2)) )	
 	abs_max_sell = prices[1..-1].max
 
 	min_buy = prices[0..-2].min
